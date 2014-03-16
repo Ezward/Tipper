@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tipper</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tip_amount">Tip Amount</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="happy">Happy</string>
+    <string name="very_happy">Very Happy</string>
+    <string name="neutral">Ok</string>
+    <string name="unhappy">Unhappy</string>
+    <string name="very_happy_percent">20%</string>
+    <string name="happy_percent">15%</string>
+    <string name="neutral_percent">10%</string>
+    <string name="unhappy_percent">5%</string>
+    <string name="title_activity_custom_percent">CustomPercentActivity</string>
+    <string name="customize">Customize</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+
+</resources>

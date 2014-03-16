@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TipperActivity" >
+
+    <EditText
+        android:id="@+id/edBillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtCurrency"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/bill_amount"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtVeryHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgVeryHappy"
+        android:layout_toLeftOf="@+id/txtVeryHappyAmount"
+        android:layout_toRightOf="@+id/imgVeryHappy"
+        android:text="@string/very_happy"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtVeryHappyAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtVeryHappy"
+        android:layout_alignBottom="@+id/txtVeryHappy"
+        android:layout_alignParentRight="true"
+        android:hint="@string/very_happy_percent"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imgVeryHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edBillAmount"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/very_happy"
+        android:src="@drawable/ic_very_happy" />
+
+    <TextView
+        android:id="@+id/txtHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgHappy"
+        android:layout_toRightOf="@+id/imgHappy"
+        android:text="@string/happy"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtHappyAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtHappy"
+        android:layout_alignRight="@+id/txtVeryHappyAmount"
+        android:hint="@string/happy_percent"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imgNeutral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgVeryHappy"
+        android:layout_below="@+id/imgHappy"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/neutral"
+        android:src="@drawable/ic_neutral" />
+
+    <TextView
+        android:id="@+id/txtNeutral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgNeutral"
+        android:layout_toRightOf="@+id/imgNeutral"
+        android:text="@string/neutral"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtNeutralAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtNeutral"
+        android:layout_alignBottom="@+id/txtNeutral"
+        android:layout_alignRight="@+id/txtVeryHappyAmount"
+        android:hint="@string/neutral_percent"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imgUnhappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgVeryHappy"
+        android:layout_below="@+id/imgNeutral"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/unhappy"
+        android:src="@drawable/ic_unhappy" />
+
+    <TextView
+        android:id="@+id/txtUnhappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgUnhappy"
+        android:layout_toRightOf="@+id/imgUnhappy"
+        android:text="@string/unhappy"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtUnhappyAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtUnhappy"
+        android:layout_alignRight="@+id/txtVeryHappyAmount"
+        android:hint="@string/unhappy_percent"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imgHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgVeryHappy"
+        android:layout_below="@+id/imgVeryHappy"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/happy"
+        android:src="@drawable/ic_happy" />
+
+    <Button
+        android:id="@+id/btnCustomize"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/customize" />
+
+    <TextView
+        android:id="@+id/txtCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edBillAmount"
+        android:layout_alignBottom="@+id/edBillAmount"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
